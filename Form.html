@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h1
+        {
+        text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form action="file.php" method="get"> <!--once submit button is clicked, button will search for file.php to store this form-->
+<div> <!--without placeholders-->
+        First Name: <input type="text" /> <!-- input is a self closing tag-->
+        <br> <br>
+        Last Name: <input type="text" />
+        <br> <br>
+        Email: <input type="email" /> 
+        <br> <br>
+        Passward: <input type="password" />
+        <br> <br>
+        <input type="Submit" />
+        <br> <br>    
+</div>
+        
+<div> <!--with placeholders-->
+    <label for="fnam">First Name: </label>
+    <input type="text" id="fnam" placeholder="Enter your name" /> 
+    <br> <br>  
+
+    <label for="lnam">Last Name: </label>
+    <input type="text" id="lnam" placeholder="Enter your last name" />
+    <br> <br>
+   
+    <label for="em">Email</label>
+    <input type="email" id="" placeholder="Enter your email" /> 
+    <br> <br>
+
+    <label for="pwd">Passward</label>
+    <input type="password" id="pwd" placeholder="Enter your passward" /> 
+    <br> <br>
+
+    <input type="Submit">
+    <br> <br>
+</div>
+<div> <!--without label and id-->
+    
+    First Name: <input type="text" placeholder="Enter your name" /> 
+    <br> <br>  
+
+    Last Name: <input type="text" placeholder="Enter your last name" />
+    <br> <br>
+   
+    Email: <input type="email" placeholder="Enter your email" /> 
+    <br> <br>
+
+    Passward: <input type="password" id="pwd" placeholder="Enter your passward" /> 
+    <br> <br>
+
+    <input type="Submit">
+    <br> <br>
+</div>
+<div> <!--with value-->
+    <label for="fnam">First Name: </label>
+    <input type="text" id="fnam" placeholder="Enter your name"  value="prasad" /> <br> <br>  
+
+    <label for="lnam">Last Name: </label>
+    <input type="text" id="lnam" placeholder="Enter your last name" value="surname" /><br> <br> 
+        
+    <label for="email">Email</label>
+    <input type="email" id="em" placeholder="Enter your email" value="abc@gmail.com"/> <br> <br>
+        
+    <label for="pwd">Passward</label>
+    <input type="password" id="pwd" placeholder="Enter your passward" value="aB1@!"/> <br> <br>
+    
+    <input type="Submit">
+    <br><br>
+</div>
+<div> <!--calender-->
+    <label for="age">Age</label>
+    <input type="number" id="age" placeholder="Enter your age" /> <br> <br>
+
+    <label for="dob">Dabe Of Birth</label>
+    <input type="date" id="dob" /> <br> <br>
+       
+    <label for="dob">Dabe Of Birth</label>
+    <input type="datetime-local" id="dob" /> <br> <br>
+    
+    <label for="dob">Time Of Birth</label>
+    <input type="time" id="dob" /> <br> <br>
+    
+    <label for="clr">Date Of Birth</label>
+    <input type="color" id="clr" /> <br> <br>
+    
+    <input type="Submit"><br> <br>
+
+    <input type="reset">
+</div>
+<div> <!--range, url and week attributes of input-->
+    <input type="range" name="" id="">
+    <input type="url" name="" id="">
+    <input type="week" name="" id="">
+</div>
+    </form>
+    
+</body>
+</html>
